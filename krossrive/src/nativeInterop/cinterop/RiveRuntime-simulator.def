@@ -1,0 +1,4 @@
+language = Objective-C
+modules = RiveRuntime
+package = RiveRuntime
+linkerOpts = -F/Users/farmanullah/AndroidStudioProjects/KrossRiveDemo/krossrive/src/frameworks/RiveRuntime.xcframework/ios-arm64_x86_64-simulator -framework RiveRuntime

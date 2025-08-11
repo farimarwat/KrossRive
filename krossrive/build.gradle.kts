@@ -29,34 +29,39 @@ kotlin {
     // configure native binary output. For more information, see:
     // https://kotlinlang.org/docs/multiplatform-build-native-binaries.html#build-xcframeworks
 
-    // A step-by-step guide on how to include this library in an XCode
-    // project can be found here:
-    // https://developer.android.com/kotlin/multiplatform/migrate
-    val xcfName = "krossriveKit"
+    val xcfBasePath = "${projectDir}/src/frameworks/RiveRuntime.xcframework"
 
-    iosX64 {
-        binaries.framework {
-            baseName = xcfName
+    val targets = listOf(
+        iosX64(),
+        iosArm64(),
+        iosSimulatorArm64()
+    )
+
+    targets.forEach { target ->
+        val (archDir, defFile) = when (target.name) {
+            "iosX64", "iosSimulatorArm64" ->
+                "ios-arm64_x86_64-simulator" to "RiveRuntime-simulator.def"
+            "iosArm64" ->
+                "ios-arm64" to "RiveRuntime-phone.def"
+            else -> error("Unsupported target ${target.name}")
+        }
+
+        target.compilations.getByName("main") {
+            cinterops.create("RiveRuntime") {
+                val frameworkPath = "$xcfBasePath/$archDir"
+                definitionFile = file("src/nativeInterop/cinterop/$defFile")
+                compilerOpts(
+                    "-F$xcfBasePath/$archDir",
+                    "-rpath",frameworkPath
+                )
+                extraOpts += listOf("-compiler-option", "-fmodules")
+            }
+        }
+
+        target.binaries.framework {
+            binaryOption("bundleId", "com.farimarwat.krossrive")
         }
     }
-
-    iosArm64 {
-        binaries.framework {
-            baseName = xcfName
-        }
-    }
-
-    iosSimulatorArm64 {
-        binaries.framework {
-            baseName = xcfName
-        }
-    }
-
-    // Source set declarations.
-    // Declaring a target automatically creates a source set with the same name. By default, the
-    // Kotlin Gradle Plugin creates additional source sets that depend on each other, since it is
-    // common to share sources between related targets.
-    // See: https://kotlinlang.org/docs/multiplatform-hierarchy.html
     sourceSets {
         commonMain {
             dependencies {

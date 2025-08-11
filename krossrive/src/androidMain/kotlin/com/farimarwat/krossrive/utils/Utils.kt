@@ -1,7 +1,7 @@
 package com.farimarwat.krossrive.utils
 
-import com.farimarwat.krossrive.core.KrossRiveAlignment
-import com.farimarwat.krossrive.core.KrossRiveContentFit
+import com.farimarwat.krossrive.model.KrossRiveAlignment
+import com.farimarwat.krossrive.model.KrossRiveContentFit
 
 fun KrossRiveContentFit.toAndroid(): app.rive.runtime.kotlin.core.Fit = when (this) {
     KrossRiveContentFit.CONTAIN -> app.rive.runtime.kotlin.core.Fit.CONTAIN

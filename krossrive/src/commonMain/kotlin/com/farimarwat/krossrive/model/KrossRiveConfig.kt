@@ -1,7 +1,7 @@
 package com.farimarwat.krossrive.model
 
-import com.farimarwat.krossrive.core.KrossRiveAlignment
-import com.farimarwat.krossrive.core.KrossRiveContentFit
+import com.farimarwat.krossrive.model.KrossRiveAlignment
+import com.farimarwat.krossrive.model.KrossRiveContentFit
 
 data class KrossRiveConfig(
     val resource: KrossRiveResource,
