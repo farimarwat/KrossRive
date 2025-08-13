@@ -52,7 +52,6 @@ kotlin {
                 definitionFile = file("src/nativeInterop/cinterop/$defFile")
                 compilerOpts(
                     "-F$xcfBasePath/$archDir",
-                    "-rpath",frameworkPath
                 )
                 extraOpts += listOf("-compiler-option", "-fmodules")
             }
@@ -60,7 +59,6 @@ kotlin {
 
         target.binaries.framework {
             binaryOption("bundleId", "com.farimarwat.krossrive")
-            linkerOpts += listOf("-Objc")
         }
     }
     sourceSets {
