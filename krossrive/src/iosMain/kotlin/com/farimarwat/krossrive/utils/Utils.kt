@@ -7,7 +7,7 @@ import com.farimarwat.krossrive.model.KrossRiveContentFit
 import kotlinx.cinterop.ExperimentalForeignApi
 
 @OptIn(ExperimentalForeignApi::class)
-private fun KrossRiveContentFit.toIOS(): RiveFit = when (this) {
+ fun KrossRiveContentFit.toIOS(): RiveFit = when (this) {
     KrossRiveContentFit.CONTAIN -> RiveFit.contain
     KrossRiveContentFit.COVER -> RiveFit.cover
     KrossRiveContentFit.FILL -> RiveFit.fill
@@ -16,7 +16,7 @@ private fun KrossRiveContentFit.toIOS(): RiveFit = when (this) {
 }
 
 @OptIn(ExperimentalForeignApi::class)
-private fun KrossRiveAlignment.toIOS(): RiveAlignment = when (this) {
+ fun KrossRiveAlignment.toIOS(): RiveAlignment = when (this) {
     KrossRiveAlignment.CENTER -> RiveAlignment.center
     KrossRiveAlignment.TOP_LEFT -> RiveAlignment.topLeft
     KrossRiveAlignment.TOP_RIGHT -> RiveAlignment.topRight

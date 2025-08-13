@@ -60,6 +60,7 @@ kotlin {
 
         target.binaries.framework {
             binaryOption("bundleId", "com.farimarwat.krossrive")
+            linkerOpts += listOf("-Objc")
         }
     }
     sourceSets {

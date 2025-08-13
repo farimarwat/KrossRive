@@ -4,7 +4,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.LocalContext
 import app.rive.runtime.kotlin.RiveAnimationView
+import com.farimarwat.krossrive.model.KrossRiveAlignment
 import com.farimarwat.krossrive.model.KrossRiveConfig
+import com.farimarwat.krossrive.model.KrossRiveContentFit
 import com.farimarwat.krossrive.model.KrossRiveResource
 import com.farimarwat.krossrive.utils.toAndroid
 
@@ -40,11 +42,25 @@ class AndroidKrossRiveAnimationState(
         view.fireState(stateMachine, input)
     }
 
-    override fun load(resource: ByteArray, stateMachine: String?) {
+    override fun load(
+        resource: ByteArray,
+        artBoardName: String?,
+        stateMachine: String?,
+        autoPlay: Boolean,
+        fit: KrossRiveContentFit,
+        alignment: KrossRiveAlignment
+    ) {
         view.setRiveBytes(resource, stateMachine)
     }
 
-    override fun load(url: String, stateMachine: String?) {
+    override fun load(
+        url: String,
+        artBoardName: String?,
+        stateMachine: String?,
+        autoPlay: Boolean,
+        fit: KrossRiveContentFit,
+        alignment: KrossRiveAlignment
+    ) {
 
     }
 }

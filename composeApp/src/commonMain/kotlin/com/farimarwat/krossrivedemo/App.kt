@@ -29,11 +29,12 @@ fun App() {
     MaterialTheme {
         var showContent by remember { mutableStateOf(false) }
         val riveBytes by produceState<ByteArray?>(initialValue = null) {
-            value = Res.readBytes("files/login.riv") // runs in a coroutine
+            value = Res.readBytes("files/login.riv")
         }
         val animationState = riveBytes?.let {
             rememberKrossRiveAnimationState(
                 config = KrossRiveConfig(
+                    //resource = KrossRiveResource.Url("https://cdn.rive.app/animations/off_road_car_v7.riv")
                     resource = KrossRiveResource.Bytes(it)
                 )
             )

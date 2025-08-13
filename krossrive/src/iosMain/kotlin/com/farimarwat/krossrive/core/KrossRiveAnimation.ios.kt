@@ -1,6 +1,6 @@
 package com.farimarwat.krossrive.core
 
-import RiveRuntime.RiveView
+
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.viewinterop.UIKitView
@@ -17,7 +17,7 @@ actual fun KrossRiveAnimation(
 ) {
     UIKitView(
         factory = {
-                (state as IosKrossRiveAnimationState).riveViewModel.createRiveView()
+            (state as IosKrossRiveAnimationState).riveViewModel?.createRiveView() as UIView
         },
         modifier = modifier
     )
