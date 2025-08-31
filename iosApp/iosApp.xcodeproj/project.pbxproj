@@ -7,26 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17E808882E4C72170024F7B5 /* RiveRuntime.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E808872E4C72170024F7B5 /* RiveRuntime.xcframework */; };
-		17E808892E4C72170024F7B5 /* RiveRuntime.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 17E808872E4C72170024F7B5 /* RiveRuntime.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		171055022E62B3DA0045443B /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 171055012E62B3DA0045443B /* RiveRuntime */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		17E8088A2E4C72170024F7B5 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				17E808892E4C72170024F7B5 /* RiveRuntime.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		17E808872E4C72170024F7B5 /* RiveRuntime.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RiveRuntime.xcframework; path = "../../../Documents/Ios-Projects/rive-ios/build/RiveRuntime.xcframework"; sourceTree = "<group>"; };
 		B9DA97B12DC1472C00A4DA20 /* KrossRiveDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KrossRiveDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -61,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17E808882E4C72170024F7B5 /* RiveRuntime.xcframework in Frameworks */,
+				171055022E62B3DA0045443B /* RiveRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,7 +55,6 @@
 		172CA57C2E4C3D0B00BDFE8B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				17E808872E4C72170024F7B5 /* RiveRuntime.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -105,7 +88,6 @@
 				B9DA97AD2DC1472C00A4DA20 /* Sources */,
 				B9DA97AE2DC1472C00A4DA20 /* Frameworks */,
 				B9DA97AF2DC1472C00A4DA20 /* Resources */,
-				17E8088A2E4C72170024F7B5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -116,6 +98,7 @@
 			);
 			name = iosApp;
 			packageProductDependencies = (
+				171055012E62B3DA0045443B /* RiveRuntime */,
 			);
 			productName = iosApp;
 			productReference = B9DA97B12DC1472C00A4DA20 /* KrossRiveDemo.app */;
@@ -146,6 +129,7 @@
 			mainGroup = B9DA97A82DC1472C00A4DA20;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
+				171055002E62B3DA0045443B /* XCRemoteSwiftPackageReference "rive-ios" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B9DA97B22DC1472C00A4DA20 /* Products */;
@@ -407,6 +391,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		171055002E62B3DA0045443B /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rive-app/rive-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.11.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		171055012E62B3DA0045443B /* RiveRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 171055002E62B3DA0045443B /* XCRemoteSwiftPackageReference "rive-ios" */;
+			productName = RiveRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B9DA97A92DC1472C00A4DA20 /* Project object */;
 }

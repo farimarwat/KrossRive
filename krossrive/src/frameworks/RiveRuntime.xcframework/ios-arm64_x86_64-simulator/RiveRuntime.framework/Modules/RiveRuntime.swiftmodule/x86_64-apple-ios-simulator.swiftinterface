@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
-// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name RiveRuntime
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name RiveRuntime
 import Combine
 import Foundation
 import OSLog
@@ -17,7 +16,7 @@ extension RiveRuntime.RiveFile {
   public static func getBytes(fileName: Swift.String, extension ext: Swift.String = ".riv", in bundle: Foundation.Bundle = .main) -> [Swift.UInt8]
   public static func getData(fileName: Swift.String, extension ext: Swift.String = ".riv", in bundle: Foundation.Bundle = .main) -> Foundation.Data
 }
-@objc @_Concurrency.MainActor @preconcurrency open class RiveView : RiveRuntime.RiveRendererView {
+@objc @_Concurrency.MainActor(unsafe) open class RiveView : RiveRuntime.RiveRendererView {
   public enum OffscreenBehavior {
     case playAndDraw
     case playAndNoDraw
@@ -27,39 +26,41 @@ extension RiveRuntime.RiveFile {
       get
     }
   }
-  @_Concurrency.MainActor @preconcurrency public var offscreenBehavior: RiveRuntime.RiveView.OffscreenBehavior
-  @objc @_Concurrency.MainActor @preconcurrency weak public var playerDelegate: (any RiveRuntime.RivePlayerDelegate)?
-  @_Concurrency.MainActor @preconcurrency weak public var stateMachineDelegate: (any RiveRuntime.RiveStateMachineDelegate)?
-  @_Concurrency.MainActor @preconcurrency public var showFPS: Swift.Bool {
+  @_Concurrency.MainActor(unsafe) public var offscreenBehavior: RiveRuntime.RiveView.OffscreenBehavior
+  @objc @_Concurrency.MainActor(unsafe) weak public var playerDelegate: (any RiveRuntime.RivePlayerDelegate)?
+  @_Concurrency.MainActor(unsafe) weak public var stateMachineDelegate: (any RiveRuntime.RiveStateMachineDelegate)?
+  @_Concurrency.MainActor(unsafe) public var showFPS: Swift.Bool {
     get
     set
   }
-  @_Concurrency.MainActor @preconcurrency public static var showFPSCounters: Swift.Bool
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var bounds: CoreFoundation.CGRect {
+  @_Concurrency.MainActor(unsafe) public static var showFPSCounters: Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var bounds: CoreFoundation.CGRect {
     @objc get
     @objc set
   }
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var frame: CoreFoundation.CGRect {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var frame: CoreFoundation.CGRect {
     @objc get
     @objc set
   }
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public init()
-  @_Concurrency.MainActor @preconcurrency convenience public init(model: RiveRuntime.RiveModel, autoPlay: Swift.Bool = true)
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public init()
+  @_Concurrency.MainActor(unsafe) convenience public init(model: RiveRuntime.RiveModel, autoPlay: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init(coder aDecoder: Foundation.NSCoder)
   @objc deinit
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func didMoveToWindow()
-  @_Concurrency.MainActor @preconcurrency open func setModel(_ model: RiveRuntime.RiveModel, autoPlay: Swift.Bool = true) throws
-  @_Concurrency.MainActor @preconcurrency open func setPreferredFramesPerSecond(preferredFramesPerSecond: Swift.Int)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func didMoveToWindow()
+  @objc @_Concurrency.MainActor(unsafe) open func setModel(_ model: RiveRuntime.RiveModel, autoPlay: Swift.Bool = true) throws
+  @objc(setPreferredFPS:) @_Concurrency.MainActor(unsafe) open func setPreferredFramesPerSecond(preferredFramesPerSecond: Swift.Int)
   @available(iOS 15, macOS 14, tvOS 15, visionOS 1, *)
-  @_Concurrency.MainActor @preconcurrency open func setPreferredFrameRateRange(preferredFrameRateRange: QuartzCore.CAFrameRateRange)
-  @objc @_Concurrency.MainActor @preconcurrency open func advance(delta: Swift.Double)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func drawRive(_ rect: CoreFoundation.CGRect, size: CoreFoundation.CGSize)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func draw(_ rect: CoreFoundation.CGRect)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func touchesMoved(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @objc(setPreferredFrameRateRange:) @_Concurrency.MainActor(unsafe) open func setPreferredFrameRateRange(preferredFrameRateRange: QuartzCore.CAFrameRateRange)
+  @objc @_Concurrency.MainActor(unsafe) open func advance(delta: Swift.Double)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func drawRive(_ rect: CoreFoundation.CGRect, size: CoreFoundation.CGSize)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func draw(_ rect: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func drawableSizeDidChange(_ drawableSize: CoreFoundation.CGSize)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func touchesMoved(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
 }
 @objc public enum RiveTouchEvent : Swift.Int {
   case began
@@ -186,8 +187,8 @@ extension RiveRuntime.RiveFile {
   @objc var fallbackFont: RiveRuntime.RiveNativeFont { get }
 }
 extension RiveRuntime.RiveStateMachineInstance {
-  public var inputs: [RiveRuntime.StateMachineInput] {
-    get
+  @objc dynamic public var inputs: [RiveRuntime.StateMachineInput] {
+    @objc get
   }
 }
 @objc public enum StateMachineInputType : Swift.IntegerLiteralType {
@@ -214,32 +215,32 @@ extension RiveRuntime.RiveStateMachineInstance {
   public init(fileName: Swift.String, extension: Swift.String = ".riv", in bundle: Foundation.Bundle = .main, animationName: Swift.String? = nil, fit: RiveRuntime.RiveFit = .contain, alignment: RiveRuntime.RiveAlignment = .center, autoPlay: Swift.Bool = true, artboardName: Swift.String? = nil, preferredFramesPerSecond: Swift.Int? = nil, loadCdn: Swift.Bool = true, customLoader: RiveRuntime.LoadAsset? = nil)
   @objc public init(webURL: Swift.String, stateMachineName: Swift.String?, fit: RiveRuntime.RiveFit = .contain, alignment: RiveRuntime.RiveAlignment = .center, autoPlay: Swift.Bool = true, loadCdn: Swift.Bool = true, artboardName: Swift.String? = nil)
   @objc public init(webURL: Swift.String, animationName: Swift.String? = nil, fit: RiveRuntime.RiveFit = .contain, alignment: RiveRuntime.RiveAlignment = .center, autoPlay: Swift.Bool = true, loadCdn: Swift.Bool = true, artboardName: Swift.String? = nil)
-  open var riveModel: RiveRuntime.RiveModel? {
-    get
+  @objc open var riveModel: RiveRuntime.RiveModel? {
+    @objc get
   }
-  open var isPlaying: Swift.Bool {
-    get
+  @objc open var isPlaying: Swift.Bool {
+    @objc get
   }
-  open var autoPlay: Swift.Bool
-  open var fit: RiveRuntime.RiveFit {
-    get
-    set
+  @objc open var autoPlay: Swift.Bool
+  @objc open var fit: RiveRuntime.RiveFit {
+    @objc get
+    @objc set
   }
-  open var alignment: RiveRuntime.RiveAlignment {
-    get
-    set
+  @objc open var alignment: RiveRuntime.RiveAlignment {
+    @objc get
+    @objc set
   }
-  open var layoutScaleFactor: Swift.Double {
-    get
-    set
+  @objc open var layoutScaleFactor: Swift.Double {
+    @objc get
+    @objc set
   }
-  open var forwardsListenerEvents: Swift.Bool {
-    get
-    set
+  @objc open var forwardsListenerEvents: Swift.Bool {
+    @objc get
+    @objc set
   }
-  public func setPreferredFramesPerSecond(preferredFramesPerSecond: Swift.Int)
+  @objc(setPreferredFramesPerSecond:) open func setPreferredFramesPerSecond(preferredFramesPerSecond: Swift.Int)
   @available(iOS 15.0, tvOS 15.0, visionOS 1.0, *)
-  public func setPreferredFrameRateRange(preferredFrameRateRange: QuartzCore.CAFrameRateRange)
+  @objc(setPreferredFrameRateRange:) open func setPreferredFrameRateRange(preferredFrameRateRange: QuartzCore.CAFrameRateRange)
   @objc open func play(animationName: Swift.String? = nil, loop: RiveRuntime.RiveLoop = .autoLoop, direction: RiveRuntime.RiveDirection = .autoDirection)
   @objc open func pause()
   @objc open func stop()
@@ -252,20 +253,20 @@ extension RiveRuntime.RiveStateMachineInstance {
   @objc(setFloatInput::) open func setInput(_ inputName: Swift.String, value: Swift.Float)
   @objc(setDoubleInput::) open func setInput(_ inputName: Swift.String, value: Swift.Double)
   @objc open func numberInput(named name: Swift.String) -> RiveRuntime.RiveSMINumber?
-  open func triggerInput(_ inputName: Swift.String, path: Swift.String)
-  open func setInput(_ inputName: Swift.String, value: Swift.Bool, path: Swift.String)
-  open func setInput(_ inputName: Swift.String, value: Swift.Float, path: Swift.String)
-  open func setInput(_ inputName: Swift.String, value: Swift.Double, path: Swift.String)
+  @objc open func triggerInput(_ inputName: Swift.String, path: Swift.String)
+  @objc(setBooleanInput:value:atPath:) open func setInput(_ inputName: Swift.String, value: Swift.Bool, path: Swift.String)
+  @objc(setFloatInput:value:atPath:) open func setInput(_ inputName: Swift.String, value: Swift.Float, path: Swift.String)
+  @objc(setDoubleInput:value:atPath:) open func setInput(_ inputName: Swift.String, value: Swift.Double, path: Swift.String)
   @objc open func getTextRunValue(_ textRunName: Swift.String) -> Swift.String?
   @objc open func getTextRunValue(_ textRunName: Swift.String, path: Swift.String) -> Swift.String?
   @objc open func setTextRunValue(_ textRunName: Swift.String, textValue: Swift.String) throws
   @objc open func setTextRunValue(_ textRunName: Swift.String, path: Swift.String, textValue: Swift.String) throws
   @objc open func artboardNames() -> [Swift.String]
   @objc open func createRiveView() -> RiveRuntime.RiveView
-  open func setRiveView(view: RiveRuntime.RiveView)
+  @objc(setRiveView:) open func setRiveView(view: RiveRuntime.RiveView)
   @objc open func update(view: RiveRuntime.RiveView)
-  open func deregisterView()
-  open func view() -> SwiftUICore.AnyView
+  @objc open func deregisterView()
+  open func view() -> SwiftUI.AnyView
   @objc open func setView(_ view: RiveRuntime.RiveView)
   @objc open func riveFileDidLoad(_ riveFile: RiveRuntime.RiveFile) throws
   @objc open func player(playedWithModel riveModel: RiveRuntime.RiveModel?)
@@ -276,12 +277,12 @@ extension RiveRuntime.RiveStateMachineInstance {
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
 }
-@_Concurrency.MainActor @preconcurrency public struct RiveViewRepresentable : SwiftUI.UIViewRepresentable {
-  @_Concurrency.MainActor @preconcurrency public init(viewModel: RiveRuntime.RiveViewModel)
-  @_Concurrency.MainActor @preconcurrency public func makeUIView(context: RiveRuntime.RiveViewRepresentable.Context) -> RiveRuntime.RiveView
-  @_Concurrency.MainActor @preconcurrency public func updateUIView(_ view: RiveRuntime.RiveView, context: SwiftUI.UIViewRepresentableContext<RiveRuntime.RiveViewRepresentable>)
-  @_Concurrency.MainActor @preconcurrency public static func dismantleUIView(_ view: RiveRuntime.RiveView, coordinator: RiveRuntime.RiveViewRepresentable.Coordinator)
-  @_Concurrency.MainActor @preconcurrency public func makeCoordinator() -> RiveRuntime.RiveViewRepresentable.Coordinator
+public struct RiveViewRepresentable : SwiftUI.UIViewRepresentable {
+  public init(viewModel: RiveRuntime.RiveViewModel)
+  @_Concurrency.MainActor(unsafe) public func makeUIView(context: RiveRuntime.RiveViewRepresentable.Context) -> RiveRuntime.RiveView
+  @_Concurrency.MainActor(unsafe) public func updateUIView(_ view: RiveRuntime.RiveView, context: SwiftUI.UIViewRepresentableContext<RiveRuntime.RiveViewRepresentable>)
+  @_Concurrency.MainActor(unsafe) public static func dismantleUIView(_ view: RiveRuntime.RiveView, coordinator: RiveRuntime.RiveViewRepresentable.Coordinator)
+  @_Concurrency.MainActor(unsafe) public func makeCoordinator() -> RiveRuntime.RiveViewRepresentable.Coordinator
   @objc @_hasMissingDesignatedInitializers public class Coordinator : ObjectiveC.NSObject {
     public var viewModel: RiveRuntime.RiveViewModel
     @objc deinit
@@ -311,7 +312,7 @@ extension RiveRuntime.RiveFallbackFontDescriptor : RiveRuntime.RiveFallbackFontP
   public var artboard: RiveRuntime.RiveArtboard! {
     get
   }
-  @objc public var riveFile: RiveRuntime.RiveFile {
+  public var riveFile: RiveRuntime.RiveFile {
     get
   }
   @objc public init(riveFile: RiveRuntime.RiveFile)
@@ -321,11 +322,11 @@ extension RiveRuntime.RiveFallbackFontDescriptor : RiveRuntime.RiveFallbackFontP
     @objc get
     @objc set
   }
-  open func setArtboard(_ name: Swift.String) throws
+  @objc open func setArtboard(_ name: Swift.String) throws
   open func setArtboard(_ index: Swift.Int? = nil) throws
-  open func setStateMachine(_ name: Swift.String) throws
+  @objc open func setStateMachine(_ name: Swift.String) throws
   open func setStateMachine(_ index: Swift.Int? = nil) throws
-  open func setAnimation(_ name: Swift.String) throws
+  @objc open func setAnimation(_ name: Swift.String) throws
   open func setAnimation(_ index: Swift.Int? = nil) throws
   @objc open func enableAutoBind(_ callback: @escaping RiveRuntime.RiveModel.AutoBindCallback)
   @objc open func disableAutoBind()
@@ -359,4 +360,3 @@ extension RiveRuntime.RiveFallbackFontDescriptorWidth : Swift.RawRepresentable {
 extension RiveRuntime.StateMachineInputType : Swift.Equatable {}
 extension RiveRuntime.StateMachineInputType : Swift.Hashable {}
 extension RiveRuntime.StateMachineInputType : Swift.RawRepresentable {}
-extension RiveRuntime.RiveViewRepresentable : Swift.Sendable {}

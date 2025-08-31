@@ -84,7 +84,7 @@ kotlin {
 
         androidMain {
             dependencies {
-                implementation("app.rive:rive-android:10.4.0")
+                implementation("app.rive:rive-android:10.4.2")
                 implementation("androidx.startup:startup-runtime:1.2.0")
             }
         }

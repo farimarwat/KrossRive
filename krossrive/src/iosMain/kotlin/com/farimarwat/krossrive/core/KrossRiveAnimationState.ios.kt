@@ -21,35 +21,35 @@ import platform.posix.err
 
 @OptIn(ExperimentalForeignApi::class)
 class IosKrossRiveAnimationState(
-    var riveViewModel: RiveViewModel?
+    var config: KrossRiveConfig
 ) : KrossRiveAnimationState {
 
+    var riveViewModel: RiveViewModel? = null
     override fun play() {
 
     }
 
     override fun pause() {
-
+        riveViewModel?.pause()
     }
 
     override fun stop() {
-
+        riveViewModel?.stop()
     }
 
     override fun reset() {
-
+        riveViewModel?.reset()
+    }
+    override fun setBoolean(stateMachineName:String,input: String, value: Boolean) {
+        riveViewModel?.setBooleanInput(input,value)
     }
 
-    override fun setBoolean(stateMachine: String, input: String, value: Boolean) {
-
+    override fun setNumber(stateMachineName:String,input: String, value: Float) {
+        riveViewModel?.setFloatInput(input,value)
     }
 
-    override fun setNumber(stateMachine: String, input: String, value: Float) {
-
-    }
-
-    override fun fire(stateMachine: String, input: String) {
-
+    override fun fire(stateMachineName:String,input: String) {
+        riveViewModel?.triggerInput(input)
     }
 
     @OptIn(BetaInteropApi::class)
@@ -63,9 +63,16 @@ class IosKrossRiveAnimationState(
             NSData.create(bytes = pinned.addressOf(0), length = resource.size.toULong())
         }
 
-        val riveFile = RiveFile(nsData,true,null)
-        val model = RiveModel(riveFile)
-
+        val riveFile = RiveFile(data = nsData, loadCdn = false, error = null)
+        val model = RiveModel(riveFile = riveFile)
+        riveViewModel = RiveViewModel(
+            model = model,
+            animationName = null,
+            fit = config.fit.toIOS(),
+            alignment = config.alignment.toIOS(),
+            autoPlay = config.autoPlay,
+            artboardName = config.artboard
+        )
     }
 
     override fun load(url: String,
@@ -74,6 +81,15 @@ class IosKrossRiveAnimationState(
                       autoPlay:Boolean ,
                       fit: KrossRiveContentFit,
                       alignment: KrossRiveAlignment) {
+        riveViewModel= RiveViewModel(
+            webURL = url,
+            loadCdn = false,
+            animationName = null,
+            fit = config.fit.toIOS(),
+            alignment = config.alignment.toIOS(),
+            autoPlay = config.autoPlay,
+            artboardName = config.artboard
+        )
 
     }
 }
@@ -84,32 +100,16 @@ actual fun rememberKrossRiveAnimationState(config: KrossRiveConfig): KrossRiveAn
     return remember(config) {
         when(val resource = config.resource){
             is KrossRiveResource.Bytes -> {
-                val nsData = resource.data.usePinned { pinned ->
-                    NSData.create(bytes = pinned.addressOf(0), length = resource.data.size.toULong())
+
+                IosKrossRiveAnimationState(config).apply {
+                    load(resource.data)
                 }
-                val riveFile = RiveFile(data = nsData, loadCdn = false, error = null)
-                val model = RiveModel(riveFile = riveFile)
-                val rVM = RiveViewModel(
-                    model = model,
-                    animationName = null,
-                    fit = config.fit.toIOS(),
-                    alignment = config.alignment.toIOS(),
-                    autoPlay = config.autoPlay,
-                    artboardName = config.artboard
-                )
-                IosKrossRiveAnimationState(rVM)
             }
             is KrossRiveResource.Url -> {
-                val rVM = RiveViewModel(
-                    webURL = resource.url,
-                    loadCdn = false,
-                    animationName = null,
-                    fit = config.fit.toIOS(),
-                    alignment = config.alignment.toIOS(),
-                    autoPlay = config.autoPlay,
-                    artboardName = config.artboard
-                )
-                IosKrossRiveAnimationState(rVM)
+
+                IosKrossRiveAnimationState(config).apply {
+                    load(resource.url)
+                }
             }
         }
     }

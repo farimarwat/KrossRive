@@ -74,11 +74,11 @@
 		</data>
 		<key>Headers/RiveMetalDrawableView.h</key>
 		<data>
-		FowgXQZcwICnQYa0WCnxH6J2Lks=
+		tbz8V70i3/F9ljn+KTPS54oG6sw=
 		</data>
 		<key>Headers/RiveRuntime-Swift.h</key>
 		<data>
-		ZgLQpY5Bk/6s5zfG4+h7FlGN/tI=
+		f2BYZGKOxQCqr+ftPYX0gXoFQCQ=
 		</data>
 		<key>Headers/RiveRuntime.h</key>
 		<data>
@@ -102,47 +102,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		gLgKdSkoYshd59GDAzQBRsqIky8=
+		H5UdlrYPBmeQ1fESlz4QjIIFTgQ=
 		</data>
 		<key>Modules/RiveRuntime.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		N+7E87orOKuzSPkfhrvLxTw7fG0=
+		7SDRkhxy7LpMIG6ZygWWJX404Bo=
 		</data>
 		<key>Modules/RiveRuntime.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		VN4COGqtJbt+8bbuI4A+1Pc2Vh0=
+		DI0cTpb8g9XtO5XtumqGGOvKDbY=
 		</data>
 		<key>Modules/RiveRuntime.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		JVFOe4bSZF/Ox98vtrCHb7sn8dI=
+		6//xYoGWMLMA4j+zao0JwWzHr38=
 		</data>
 		<key>Modules/RiveRuntime.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		VN4COGqtJbt+8bbuI4A+1Pc2Vh0=
+		DI0cTpb8g9XtO5XtumqGGOvKDbY=
 		</data>
 		<key>Modules/RiveRuntime.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		et6ck0eDSuQVV/TIZxtD1PwJtiE=
+		bIpveKgQLs/7B2biomHOSQwPEl0=
 		</data>
 		<key>Modules/RiveRuntime.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		N+7E87orOKuzSPkfhrvLxTw7fG0=
+		7SDRkhxy7LpMIG6ZygWWJX404Bo=
 		</data>
 		<key>Modules/RiveRuntime.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		kPKzzcApe6SV6etw6pCF/SPJx18=
+		zz8+hU6Kmms6FOIWRrlsUO1l9N0=
 		</data>
 		<key>Modules/RiveRuntime.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		vK2hlyU9dcR30ovN3Sli5mfHgU8=
+		oLqsZbI8RccSNEbxhP7NolWKOXE=
 		</data>
 		<key>Modules/RiveRuntime.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		kPKzzcApe6SV6etw6pCF/SPJx18=
+		zz8+hU6Kmms6FOIWRrlsUO1l9N0=
 		</data>
 		<key>Modules/RiveRuntime.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		zCbbfk09qKc6aNQPooUz69ACclY=
+		Pj8JQbzUysTlbiJ36PZ2GiqqoOU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -282,14 +282,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hG6A5a7uNZetOvZGwP2kWgWPRxowHmzV6MTAu8NnoEw=
+			VPyG95k2fVh561h0wKyeZqGkLAfhHckw3zYYm/AXQKk=
 			</data>
 		</dict>
 		<key>Headers/RiveRuntime-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mcuQNQ0UzXwntUKxz7cndKt99BptFwhKiqH7hvWZ7wo=
+			4KEYwXO5k/rd+dQJEm+Uw4vvxGobc4PU1lCU2oj/ugM=
 			</data>
 		</dict>
 		<key>Headers/RiveRuntime.h</key>
@@ -331,70 +331,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aDTTCTzPpvBy+rZIRXVAQwP1Wl4nJ48wYuhAE7KxyP0=
+			ToiTtDxWvdMhaxTAtLQ7P1kegNGT9Oo1Z/EopX2J66w=
 			</data>
 		</dict>
 		<key>Modules/RiveRuntime.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pFEfe1iJZtZww1wUbCWr8TeCClCdfVgSrqqYtAL4p9I=
+			93irdQHfTR1Zs5nc72QIJ2GCpMjMcs96hNIeMoWeIKo=
 			</data>
 		</dict>
 		<key>Modules/RiveRuntime.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7kg/X44uFM20L3QtiQnQhWQTg8zSUKUGZvemZM7uJt4=
+			KCUAxe/T6OzeGo3dniPeM1X6w+7vME/6cLtK1qMgFco=
 			</data>
 		</dict>
 		<key>Modules/RiveRuntime.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pFEfe1iJZtZww1wUbCWr8TeCClCdfVgSrqqYtAL4p9I=
+			93irdQHfTR1Zs5nc72QIJ2GCpMjMcs96hNIeMoWeIKo=
 			</data>
 		</dict>
 		<key>Modules/RiveRuntime.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ro5Ixg+0WEh4mfGAdAJck7Fs8oaTsBfS0uYsD6z0aX0=
+			78PIoytIXu0a6oSF6ke06fb6heHuq6qBLpnPzMd4vLE=
 			</data>
 		</dict>
 		<key>Modules/RiveRuntime.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aDTTCTzPpvBy+rZIRXVAQwP1Wl4nJ48wYuhAE7KxyP0=
+			ToiTtDxWvdMhaxTAtLQ7P1kegNGT9Oo1Z/EopX2J66w=
 			</data>
 		</dict>
 		<key>Modules/RiveRuntime.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AnAnT8YSUIH+5IlYydToOgBarDekplCouWq0T4kVtsY=
+			otJGPaoHKuwUNdAqhUCS20oIv9CmIjnSRCIwrm/t0R0=
 			</data>
 		</dict>
 		<key>Modules/RiveRuntime.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EzGOhgq1MfPTUb9bBty7c5PgQwHCyXmyuU87GyRQuZ8=
+			g88pU6V/CwvuF4mQuDsrC2T7sF4YIfEnt6lYI9rXUn8=
 			</data>
 		</dict>
 		<key>Modules/RiveRuntime.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AnAnT8YSUIH+5IlYydToOgBarDekplCouWq0T4kVtsY=
+			otJGPaoHKuwUNdAqhUCS20oIv9CmIjnSRCIwrm/t0R0=
 			</data>
 		</dict>
 		<key>Modules/RiveRuntime.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EPRw7bUmTREbckuh+LkIH3BriHCv//E5j5OEpH80Xc8=
+			GpL8CD6W/Uq3SI4NX0s+4a2YS2Dk/o6Di5dDWjSUCU4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

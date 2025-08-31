@@ -30,16 +30,16 @@ class AndroidKrossRiveAnimationState(
         view.reset()
     }
 
-    override fun setBoolean(stateMachine: String, input: String, value: Boolean) {
-        view.setBooleanState(stateMachine, input, value)
+    override fun setBoolean(stateMachineName:String, input: String, value: Boolean) {
+        view.setBooleanState(stateMachineName, input, value)
     }
 
-    override fun setNumber(stateMachine: String, input: String, value: Float) {
-        view.setNumberState(stateMachine, input, value)
+    override fun setNumber(stateMachineName:String,input: String, value: Float) {
+        view.setNumberState(stateMachineName, input, value)
     }
 
-    override fun fire(stateMachine: String, input: String) {
-        view.fireState(stateMachine, input)
+    override fun fire(stateMachineName:String,input: String) {
+        view.fireState(stateMachineName, input)
     }
 
     override fun load(
@@ -71,11 +71,19 @@ actual fun rememberKrossRiveAnimationState(
 ): KrossRiveAnimationState {
     val context = LocalContext.current
     return remember(config) {
-        val view = RiveAnimationView(context).apply {
-            fit = config.fit.toAndroid()
-            alignment = config.alignment.toAndroid()
-            autoplay = config.autoPlay
-        }
+        val view = RiveAnimationView.Builder(context)
+            .setAutoplay(config.autoPlay)
+            .setFit(config.fit.toAndroid())
+            .setAlignment(config.alignment.toAndroid())
+            .also {
+                if (config.artboard != null) {
+                    it.setArtboardName(config.artboard)
+                }
+                if(config.stateMachine != null){
+                    it.setStateMachineName(config.stateMachine)
+                }
+            }
+            .build()
         val state = AndroidKrossRiveAnimationState(view)
         when (val res = config.resource) {
             is KrossRiveResource.Bytes -> state.load(res.data, config.stateMachine)

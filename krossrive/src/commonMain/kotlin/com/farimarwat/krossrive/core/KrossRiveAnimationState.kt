@@ -11,9 +11,9 @@ interface KrossRiveAnimationState {
     fun stop()
     fun reset()
 
-    fun setBoolean(stateMachine: String, input: String, value: Boolean)
-    fun setNumber(stateMachine: String, input: String, value: Float)
-    fun fire(stateMachine: String, input: String)
+    fun setBoolean(stateMachineName:String,input: String, value: Boolean)
+    fun setNumber(stateMachineName:String,input: String, value: Float)
+    fun fire(stateMachineName:String,input: String)
 
     fun load(
         resource: ByteArray,

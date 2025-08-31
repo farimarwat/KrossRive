@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "RiveRuntime",
-    "printedName": "RiveRuntime",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
     "children": [
       {
         "kind": "Import",
@@ -215,20 +215,6 @@
             "conformances": [
               {
                 "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -261,9 +247,8 @@
             "moduleName": "RiveRuntime",
             "declAttributes": [
               "HasInitialValue",
-              "Preconcurrency",
-              "Custom",
               "HasStorage",
+              "Custom",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -348,9 +333,8 @@
             "moduleName": "RiveRuntime",
             "declAttributes": [
               "HasInitialValue",
-              "Preconcurrency",
-              "Custom",
               "HasStorage",
+              "Custom",
               "ReferenceOwnership",
               "AccessControl",
               "ObjC",
@@ -461,9 +445,8 @@
             "moduleName": "RiveRuntime",
             "declAttributes": [
               "HasInitialValue",
-              "Preconcurrency",
-              "Custom",
               "HasStorage",
+              "Custom",
               "ReferenceOwnership",
               "AccessControl"
             ],
@@ -567,9 +550,8 @@
             "moduleName": "RiveRuntime",
             "declAttributes": [
               "HasInitialValue",
-              "Preconcurrency",
-              "Custom",
               "HasStorage",
+              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -658,9 +640,8 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "Preconcurrency",
-              "Custom",
               "HasStorage",
+              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -763,7 +744,6 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -850,7 +830,6 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -936,7 +915,6 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -973,7 +951,6 @@
             "mangledName": "$s11RiveRuntime0A4ViewC5model8autoPlayAcA0A5ModelC_Sbtcfc",
             "moduleName": "RiveRuntime",
             "declAttributes": [
-              "Preconcurrency",
               "Custom",
               "Convenience",
               "AccessControl"
@@ -1007,7 +984,6 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Required"
@@ -1035,7 +1011,6 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -1067,14 +1042,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11RiveRuntime0A4ViewC8setModel_8autoPlayyAA0aE0C_SbtKF",
+            "usr": "c:@M@RiveRuntime@objc(cs)RiveView(im)setModel:autoPlay:error:",
             "mangledName": "$s11RiveRuntime0A4ViewC8setModel_8autoPlayyAA0aE0C_SbtKF",
             "moduleName": "RiveRuntime",
             "isOpen": true,
             "declAttributes": [
-              "Preconcurrency",
               "Custom",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "throwing": true,
@@ -1098,14 +1073,15 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11RiveRuntime0A4ViewC27setPreferredFramesPerSecond09preferredfgH0ySi_tF",
+            "usr": "c:@M@RiveRuntime@objc(cs)RiveView(im)setPreferredFPS:",
             "mangledName": "$s11RiveRuntime0A4ViewC27setPreferredFramesPerSecond09preferredfgH0ySi_tF",
             "moduleName": "RiveRuntime",
             "isOpen": true,
+            "objc_name": "setPreferredFPS:",
             "declAttributes": [
-              "Preconcurrency",
               "Custom",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -1128,17 +1104,18 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11RiveRuntime0A4ViewC26setPreferredFrameRateRange09preferredfgH0ySo07CAFramegH0V_tF",
+            "usr": "c:@M@RiveRuntime@objc(cs)RiveView(im)setPreferredFrameRateRange:",
             "mangledName": "$s11RiveRuntime0A4ViewC26setPreferredFrameRateRange09preferredfgH0ySo07CAFramegH0V_tF",
             "moduleName": "RiveRuntime",
             "isOpen": true,
             "intro_Macosx": "14",
             "intro_iOS": "15",
             "intro_tvOS": "15",
+            "objc_name": "setPreferredFrameRateRange:",
             "declAttributes": [
-              "Preconcurrency",
               "Custom",
               "AccessControl",
+              "ObjC",
               "Available",
               "Available",
               "Available",
@@ -1171,7 +1148,6 @@
             "isOpen": true,
             "objc_name": "advanceWithDelta:",
             "declAttributes": [
-              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -1212,7 +1188,6 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override",
@@ -1247,7 +1222,66 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "drawableSizeDidChange",
+            "printedName": "drawableSizeDidChange(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RiveRuntime@objc(cs)RiveView(im)drawableSizeDidChange:",
+            "mangledName": "$s11RiveRuntime0A4ViewC21drawableSizeDidChangeyySo6CGSizeVF",
+            "moduleName": "RiveRuntime",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "drawableSizeDidChange:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "layoutSubviews",
+            "printedName": "layoutSubviews()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RiveRuntime@objc(cs)RiveView(im)layoutSubviews",
+            "mangledName": "$s11RiveRuntime0A4ViewC14layoutSubviewsyyF",
+            "moduleName": "RiveRuntime",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "layoutSubviews",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
               "Custom",
               "Override",
               "AccessControl"
@@ -1289,7 +1323,6 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -1345,7 +1378,6 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -1401,7 +1433,6 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -1457,7 +1488,6 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -1513,7 +1543,6 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -1548,7 +1577,6 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -1596,7 +1624,6 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -1609,7 +1636,6 @@
         "moduleName": "RiveRuntime",
         "isOpen": true,
         "declAttributes": [
-          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -1624,20 +1650,6 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1960,20 +1972,6 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -2360,22 +2358,6 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       },
       {
@@ -2595,22 +2577,6 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       },
       {
@@ -2948,20 +2914,6 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -3469,20 +3421,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -3817,20 +3755,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -4011,17 +3935,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
+            "name": "RiveFallbackFontProvider",
+            "printedName": "RiveFallbackFontProvider",
+            "usr": "c:@M@RiveRuntime@objc(pl)RiveFallbackFontProvider",
+            "mangledName": "$s11RiveRuntime0A20FallbackFontProviderP"
           },
           {
             "kind": "Conformance",
@@ -4071,13 +3988,6 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RiveFallbackFontProvider",
-            "printedName": "RiveFallbackFontProvider",
-            "usr": "c:@M@RiveRuntime@objc(pl)RiveFallbackFontProvider",
-            "mangledName": "$s11RiveRuntime0A20FallbackFontProviderP"
           }
         ]
       },
@@ -4746,20 +4656,6 @@
             ],
             "usr": "s:s9OptionSetP",
             "mangledName": "$ss9OptionSetP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -5637,20 +5533,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -6232,20 +6114,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -6397,22 +6265,6 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       },
       {
@@ -6656,20 +6508,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -6849,20 +6687,6 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -7713,7 +7537,7 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:11RiveRuntime0A9ViewModelC04riveD0AA0aD0CSgvp",
+            "usr": "c:@M@RiveRuntime@objc(cs)RiveViewModel(py)riveModel",
             "mangledName": "$s11RiveRuntime0A9ViewModelC04riveD0AA0aD0CSgvp",
             "moduleName": "RiveRuntime",
             "isOpen": true,
@@ -7722,6 +7546,7 @@
               "HasStorage",
               "SetterAccess",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "hasStorage": true,
@@ -7747,11 +7572,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11RiveRuntime0A9ViewModelC04riveD0AA0aD0CSgvg",
+                "usr": "c:@M@RiveRuntime@objc(cs)RiveViewModel(im)riveModel",
                 "mangledName": "$s11RiveRuntime0A9ViewModelC04riveD0AA0aD0CSgvg",
                 "moduleName": "RiveRuntime",
                 "implicit": true,
                 "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               }
             ]
@@ -7769,12 +7597,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:11RiveRuntime0A9ViewModelC9isPlayingSbvp",
+            "usr": "c:@M@RiveRuntime@objc(cs)RiveViewModel(py)isPlaying",
             "mangledName": "$s11RiveRuntime0A9ViewModelC9isPlayingSbvp",
             "moduleName": "RiveRuntime",
             "isOpen": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "accessors": [
               {
@@ -7790,10 +7619,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11RiveRuntime0A9ViewModelC9isPlayingSbvg",
+                "usr": "c:@M@RiveRuntime@objc(cs)RiveViewModel(im)isPlaying",
                 "mangledName": "$s11RiveRuntime0A9ViewModelC9isPlayingSbvg",
                 "moduleName": "RiveRuntime",
                 "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               }
             ]
@@ -7811,13 +7643,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:11RiveRuntime0A9ViewModelC8autoPlaySbvp",
+            "usr": "c:@M@RiveRuntime@objc(cs)RiveViewModel(py)autoPlay",
             "mangledName": "$s11RiveRuntime0A9ViewModelC8autoPlaySbvp",
             "moduleName": "RiveRuntime",
             "isOpen": true,
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "hasStorage": true,
             "accessors": [
@@ -7834,11 +7667,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11RiveRuntime0A9ViewModelC8autoPlaySbvg",
+                "usr": "c:@M@RiveRuntime@objc(cs)RiveViewModel(im)autoPlay",
                 "mangledName": "$s11RiveRuntime0A9ViewModelC8autoPlaySbvg",
                 "moduleName": "RiveRuntime",
                 "implicit": true,
                 "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -7859,11 +7695,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11RiveRuntime0A9ViewModelC8autoPlaySbvs",
+                "usr": "c:@M@RiveRuntime@objc(cs)RiveViewModel(im)setAutoPlay:",
                 "mangledName": "$s11RiveRuntime0A9ViewModelC8autoPlaySbvs",
                 "moduleName": "RiveRuntime",
                 "implicit": true,
                 "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -7900,14 +7739,15 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:11RiveRuntime0A9ViewModelC3fitSo0A3FitVvp",
+            "usr": "c:@M@RiveRuntime@objc(cs)RiveViewModel(py)fit",
             "mangledName": "$s11RiveRuntime0A9ViewModelC3fitSo0A3FitVvp",
             "moduleName": "RiveRuntime",
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "hasStorage": true,
             "accessors": [
@@ -7924,11 +7764,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11RiveRuntime0A9ViewModelC3fitSo0A3FitVvg",
+                "usr": "c:@M@RiveRuntime@objc(cs)RiveViewModel(im)fit",
                 "mangledName": "$s11RiveRuntime0A9ViewModelC3fitSo0A3FitVvg",
                 "moduleName": "RiveRuntime",
                 "implicit": true,
                 "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -7949,11 +7792,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11RiveRuntime0A9ViewModelC3fitSo0A3FitVvs",
+                "usr": "c:@M@RiveRuntime@objc(cs)RiveViewModel(im)setFit:",
                 "mangledName": "$s11RiveRuntime0A9ViewModelC3fitSo0A3FitVvs",
                 "moduleName": "RiveRuntime",
                 "implicit": true,
                 "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -7990,14 +7836,15 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:11RiveRuntime0A9ViewModelC9alignmentSo0A9AlignmentVvp",
+            "usr": "c:@M@RiveRuntime@objc(cs)RiveViewModel(py)alignment",
             "mangledName": "$s11RiveRuntime0A9ViewModelC9alignmentSo0A9AlignmentVvp",
             "moduleName": "RiveRuntime",
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "hasStorage": true,
             "accessors": [
@@ -8014,11 +7861,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11RiveRuntime0A9ViewModelC9alignmentSo0A9AlignmentVvg",
+                "usr": "c:@M@RiveRuntime@objc(cs)RiveViewModel(im)alignment",
                 "mangledName": "$s11RiveRuntime0A9ViewModelC9alignmentSo0A9AlignmentVvg",
                 "moduleName": "RiveRuntime",
                 "implicit": true,
                 "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -8039,11 +7889,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11RiveRuntime0A9ViewModelC9alignmentSo0A9AlignmentVvs",
+                "usr": "c:@M@RiveRuntime@objc(cs)RiveViewModel(im)setAlignment:",
                 "mangledName": "$s11RiveRuntime0A9ViewModelC9alignmentSo0A9AlignmentVvs",
                 "moduleName": "RiveRuntime",
                 "implicit": true,
                 "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -8080,7 +7933,7 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:11RiveRuntime0A9ViewModelC17layoutScaleFactorSdvp",
+            "usr": "c:@M@RiveRuntime@objc(cs)RiveViewModel(py)layoutScaleFactor",
             "mangledName": "$s11RiveRuntime0A9ViewModelC17layoutScaleFactorSdvp",
             "moduleName": "RiveRuntime",
             "isOpen": true,
@@ -8088,6 +7941,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "hasStorage": true,
@@ -8105,11 +7959,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11RiveRuntime0A9ViewModelC17layoutScaleFactorSdvg",
+                "usr": "c:@M@RiveRuntime@objc(cs)RiveViewModel(im)layoutScaleFactor",
                 "mangledName": "$s11RiveRuntime0A9ViewModelC17layoutScaleFactorSdvg",
                 "moduleName": "RiveRuntime",
                 "implicit": true,
                 "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -8130,11 +7987,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11RiveRuntime0A9ViewModelC17layoutScaleFactorSdvs",
+                "usr": "c:@M@RiveRuntime@objc(cs)RiveViewModel(im)setLayoutScaleFactor:",
                 "mangledName": "$s11RiveRuntime0A9ViewModelC17layoutScaleFactorSdvs",
                 "moduleName": "RiveRuntime",
                 "implicit": true,
                 "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -8171,7 +8031,7 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:11RiveRuntime0A9ViewModelC22forwardsListenerEventsSbvp",
+            "usr": "c:@M@RiveRuntime@objc(cs)RiveViewModel(py)forwardsListenerEvents",
             "mangledName": "$s11RiveRuntime0A9ViewModelC22forwardsListenerEventsSbvp",
             "moduleName": "RiveRuntime",
             "isOpen": true,
@@ -8179,6 +8039,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "hasStorage": true,
@@ -8196,11 +8057,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11RiveRuntime0A9ViewModelC22forwardsListenerEventsSbvg",
+                "usr": "c:@M@RiveRuntime@objc(cs)RiveViewModel(im)forwardsListenerEvents",
                 "mangledName": "$s11RiveRuntime0A9ViewModelC22forwardsListenerEventsSbvg",
                 "moduleName": "RiveRuntime",
                 "implicit": true,
                 "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -8221,11 +8085,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11RiveRuntime0A9ViewModelC22forwardsListenerEventsSbvs",
+                "usr": "c:@M@RiveRuntime@objc(cs)RiveViewModel(im)setForwardsListenerEvents:",
                 "mangledName": "$s11RiveRuntime0A9ViewModelC22forwardsListenerEventsSbvs",
                 "moduleName": "RiveRuntime",
                 "implicit": true,
                 "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -8267,11 +8134,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11RiveRuntime0A9ViewModelC27setPreferredFramesPerSecond09preferredghI0ySi_tF",
+            "usr": "c:@M@RiveRuntime@objc(cs)RiveViewModel(im)setPreferredFramesPerSecond:",
             "mangledName": "$s11RiveRuntime0A9ViewModelC27setPreferredFramesPerSecond09preferredghI0ySi_tF",
             "moduleName": "RiveRuntime",
+            "isOpen": true,
+            "objc_name": "setPreferredFramesPerSecond:",
             "declAttributes": [
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -8294,13 +8164,16 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11RiveRuntime0A9ViewModelC26setPreferredFrameRateRange09preferredghI0ySo07CAFramehI0V_tF",
+            "usr": "c:@M@RiveRuntime@objc(cs)RiveViewModel(im)setPreferredFrameRateRange:",
             "mangledName": "$s11RiveRuntime0A9ViewModelC26setPreferredFrameRateRange09preferredghI0ySo07CAFramehI0V_tF",
             "moduleName": "RiveRuntime",
+            "isOpen": true,
             "intro_iOS": "15.0",
             "intro_tvOS": "15.0",
+            "objc_name": "setPreferredFrameRateRange:",
             "declAttributes": [
               "AccessControl",
+              "ObjC",
               "Available",
               "Available",
               "Available",
@@ -8762,12 +8635,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11RiveRuntime0A9ViewModelC12triggerInput_4pathySS_SStF",
+            "usr": "c:@M@RiveRuntime@objc(cs)RiveViewModel(im)triggerInput:path:",
             "mangledName": "$s11RiveRuntime0A9ViewModelC12triggerInput_4pathySS_SStF",
             "moduleName": "RiveRuntime",
             "isOpen": true,
             "declAttributes": [
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -8802,12 +8676,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11RiveRuntime0A9ViewModelC8setInput_5value4pathySS_SbSStF",
+            "usr": "c:@M@RiveRuntime@objc(cs)RiveViewModel(im)setBooleanInput:value:atPath:",
             "mangledName": "$s11RiveRuntime0A9ViewModelC8setInput_5value4pathySS_SbSStF",
             "moduleName": "RiveRuntime",
             "isOpen": true,
+            "objc_name": "setBooleanInput:value:atPath:",
             "declAttributes": [
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -8842,12 +8718,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11RiveRuntime0A9ViewModelC8setInput_5value4pathySS_SfSStF",
+            "usr": "c:@M@RiveRuntime@objc(cs)RiveViewModel(im)setFloatInput:value:atPath:",
             "mangledName": "$s11RiveRuntime0A9ViewModelC8setInput_5value4pathySS_SfSStF",
             "moduleName": "RiveRuntime",
             "isOpen": true,
+            "objc_name": "setFloatInput:value:atPath:",
             "declAttributes": [
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -8882,12 +8760,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11RiveRuntime0A9ViewModelC8setInput_5value4pathySS_SdSStF",
+            "usr": "c:@M@RiveRuntime@objc(cs)RiveViewModel(im)setDoubleInput:value:atPath:",
             "mangledName": "$s11RiveRuntime0A9ViewModelC8setInput_5value4pathySS_SdSStF",
             "moduleName": "RiveRuntime",
             "isOpen": true,
+            "objc_name": "setDoubleInput:value:atPath:",
             "declAttributes": [
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -9126,12 +9006,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11RiveRuntime0A9ViewModelC03setaC04viewyAA0aC0C_tF",
+            "usr": "c:@M@RiveRuntime@objc(cs)RiveViewModel(im)setRiveView:",
             "mangledName": "$s11RiveRuntime0A9ViewModelC03setaC04viewyAA0aC0C_tF",
             "moduleName": "RiveRuntime",
             "isOpen": true,
+            "objc_name": "setRiveView:",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -9177,12 +9059,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11RiveRuntime0A9ViewModelC010deregisterC0yyF",
+            "usr": "c:@M@RiveRuntime@objc(cs)RiveViewModel(im)deregisterView",
             "mangledName": "$s11RiveRuntime0A9ViewModelC010deregisterC0yyF",
             "moduleName": "RiveRuntime",
             "isOpen": true,
             "declAttributes": [
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -9548,20 +9431,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -9639,8 +9508,6 @@
             "mangledName": "$s11RiveRuntime0A17ViewRepresentableV9viewModelAcA0acF0C_tcfc",
             "moduleName": "RiveRuntime",
             "declAttributes": [
-              "Preconcurrency",
-              "Custom",
               "AccessControl"
             ],
             "init_kind": "Designated"
@@ -9676,7 +9543,6 @@
             "mangledName": "$s11RiveRuntime0A17ViewRepresentableV10makeUIView7contextAA0aC0C7SwiftUI0fD7ContextVyACG_tF",
             "moduleName": "RiveRuntime",
             "declAttributes": [
-              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -9719,7 +9585,6 @@
             "mangledName": "$s11RiveRuntime0A17ViewRepresentableV12updateUIView_7contextyAA0aC0C_7SwiftUI0fD7ContextVyACGtF",
             "moduleName": "RiveRuntime",
             "declAttributes": [
-              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -9754,7 +9619,6 @@
             "moduleName": "RiveRuntime",
             "static": true,
             "declAttributes": [
-              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -9777,7 +9641,6 @@
             "mangledName": "$s11RiveRuntime0A17ViewRepresentableV15makeCoordinatorAC0F0CyF",
             "moduleName": "RiveRuntime",
             "declAttributes": [
-              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -9917,20 +9780,6 @@
             "conformances": [
               {
                 "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -9986,26 +9835,10 @@
         "mangledName": "$s11RiveRuntime0A17ViewRepresentableV",
         "moduleName": "RiveRuntime",
         "declAttributes": [
-          "Preconcurrency",
-          "Custom",
           "AccessControl",
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "UIViewRepresentable",
@@ -10062,13 +9895,6 @@
             ],
             "usr": "s:7SwiftUI4ViewP",
             "mangledName": "$s7SwiftUI4ViewP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -10332,14 +10158,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@RiveRuntime@objc(cs)RiveModel(py)riveFile",
+            "usr": "s:11RiveRuntime0A5ModelC8riveFileSo0aE0Cvp",
             "mangledName": "$s11RiveRuntime0A5ModelC8riveFileSo0aE0Cvp",
             "moduleName": "RiveRuntime",
             "declAttributes": [
               "HasStorage",
               "SetterAccess",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -10356,13 +10181,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@RiveRuntime@objc(cs)RiveModel(im)riveFile",
+                "usr": "s:11RiveRuntime0A5ModelC8riveFileSo0aE0Cvg",
                 "mangledName": "$s11RiveRuntime0A5ModelC8riveFileSo0aE0Cvg",
                 "moduleName": "RiveRuntime",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -10646,12 +10468,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11RiveRuntime0A5ModelC11setArtboardyySSKF",
+            "usr": "c:@M@RiveRuntime@objc(cs)RiveModel(im)setArtboard:error:",
             "mangledName": "$s11RiveRuntime0A5ModelC11setArtboardyySSKF",
             "moduleName": "RiveRuntime",
             "isOpen": true,
             "declAttributes": [
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "throwing": true,
@@ -10713,12 +10536,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11RiveRuntime0A5ModelC15setStateMachineyySSKF",
+            "usr": "c:@M@RiveRuntime@objc(cs)RiveModel(im)setStateMachine:error:",
             "mangledName": "$s11RiveRuntime0A5ModelC15setStateMachineyySSKF",
             "moduleName": "RiveRuntime",
             "isOpen": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
@@ -10778,12 +10602,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11RiveRuntime0A5ModelC12setAnimationyySSKF",
+            "usr": "c:@M@RiveRuntime@objc(cs)RiveModel(im)setAnimation:error:",
             "mangledName": "$s11RiveRuntime0A5ModelC12setAnimationyySSKF",
             "moduleName": "RiveRuntime",
             "isOpen": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
@@ -11003,20 +10828,6 @@
             ],
             "usr": "s:7Combine16ObservableObjectP",
             "mangledName": "$s7Combine16ObservableObjectP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -11301,20 +11112,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -11390,11 +11187,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:So24RiveStateMachineInstanceC0A7RuntimeE6inputsSayAC0bC5InputCGvp",
+            "usr": "c:@CM@RiveRuntime@@objc(cs)RiveStateMachineInstance(py)inputs",
             "mangledName": "$sSo24RiveStateMachineInstanceC0A7RuntimeE6inputsSayAC0bC5InputCGvp",
             "moduleName": "RiveRuntime",
             "declAttributes": [
-              "AccessControl"
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
             ],
             "isFromExtension": true,
             "accessors": [
@@ -11419,9 +11218,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:So24RiveStateMachineInstanceC0A7RuntimeE6inputsSayAC0bC5InputCGvg",
+                "usr": "c:@CM@RiveRuntime@@objc(cs)RiveStateMachineInstance(im)inputs",
                 "mangledName": "$sSo24RiveStateMachineInstanceC0A7RuntimeE6inputsSayAC0bC5InputCGvg",
                 "moduleName": "RiveRuntime",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
                 "isFromExtension": true,
                 "accessorKind": "get"
               }
@@ -11444,20 +11247,6 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -11593,20 +11382,6 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -11775,23 +11550,7 @@
             "usr": "s:So15RiveRenderImageC0A7RuntimeE6FormatO",
             "mangledName": "$sSo15RiveRenderImageC0A7RuntimeE6FormatO",
             "moduleName": "RiveRuntime",
-            "isFromExtension": true,
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              }
-            ]
+            "isFromExtension": true
           },
           {
             "kind": "Constructor",
@@ -11854,20 +11613,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -11922,826 +11667,980 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Utils\/RiveFile+Extensions.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Utils\/RiveFile+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 261,
       "length": 6,
       "value": "\".riv\""
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Utils\/RiveFile+Extensions.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Utils\/RiveFile+Extensions.swift",
       "kind": "BooleanLiteral",
       "offset": 310,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Utils\/RiveFile+Extensions.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Utils\/RiveFile+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 801,
       "length": 6,
       "value": "\".riv\""
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Utils\/RiveFile+Extensions.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Utils\/RiveFile+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 1070,
       "length": 6,
       "value": "\".riv\""
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveView.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveView.swift",
       "kind": "IntegerLiteral",
       "offset": 274,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveView.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveView.swift",
       "kind": "BooleanLiteral",
       "offset": 2222,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveView.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveView.swift",
       "kind": "BooleanLiteral",
       "offset": 2372,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveView.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveView.swift",
       "kind": "IntegerLiteral",
       "offset": 2421,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveView.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveView.swift",
       "kind": "BooleanLiteral",
       "offset": 3289,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveView.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveView.swift",
       "kind": "BooleanLiteral",
       "offset": 3856,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveView.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6888,
+      "offset": 6894,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveView.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveView.swift",
+      "kind": "StringLiteral",
+      "offset": 166,
+      "length": 8,
+      "value": "\"RiveRuntime.RiveView\""
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveView.swift",
+      "kind": "StringLiteral",
+      "offset": 166,
+      "length": 8,
+      "value": "\"RiveRuntime.RiveView\""
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveView.swift",
       "kind": "IntegerLiteral",
-      "offset": 26810,
+      "offset": 28226,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveView.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveView.swift",
       "kind": "IntegerLiteral",
-      "offset": 26901,
+      "offset": 28317,
       "length": 5,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveView.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveView.swift",
       "kind": "IntegerLiteral",
-      "offset": 26994,
+      "offset": 28410,
       "length": 9,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveView.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 28226,
+      "length": 5,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 28317,
+      "length": 5,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 28410,
+      "length": 9,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveView.swift",
       "kind": "Array",
-      "offset": 28602,
+      "offset": 30018,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger+Model.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger+Model.swift",
       "kind": "StringLiteral",
       "offset": 593,
       "length": 12,
       "value": "\"rive-model\""
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveDisplayLink.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveDisplayLink.swift",
       "kind": "BooleanLiteral",
       "offset": 1177,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger+ViewModel.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger+ViewModel.swift",
       "kind": "StringLiteral",
       "offset": 634,
       "length": 17,
       "value": "\"rive-view-model\""
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger+DataBinding.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger+DataBinding.swift",
       "kind": "StringLiteral",
       "offset": 1205,
       "length": 19,
       "value": "\"rive-data-binding\""
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
       "kind": "IntegerLiteral",
       "offset": 455,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
       "kind": "IntegerLiteral",
       "offset": 518,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
       "kind": "IntegerLiteral",
       "offset": 587,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
       "kind": "IntegerLiteral",
       "offset": 646,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 455,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 518,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 587,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 646,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
       "kind": "IntegerLiteral",
       "offset": 867,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
       "kind": "IntegerLiteral",
       "offset": 915,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
       "kind": "IntegerLiteral",
       "offset": 965,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
       "kind": "IntegerLiteral",
       "offset": 1039,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
       "kind": "IntegerLiteral",
       "offset": 1091,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
       "kind": "IntegerLiteral",
       "offset": 1148,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
       "kind": "IntegerLiteral",
       "offset": 1196,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
       "kind": "IntegerLiteral",
       "offset": 1246,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
       "kind": "IntegerLiteral",
       "offset": 1296,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 867,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 915,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 965,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1039,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1091,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1148,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1196,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1246,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1296,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
       "kind": "IntegerLiteral",
       "offset": 1420,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
       "kind": "IntegerLiteral",
       "offset": 1482,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
       "kind": "IntegerLiteral",
       "offset": 1542,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
       "kind": "IntegerLiteral",
       "offset": 1602,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1420,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1482,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1542,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1602,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor.swift",
+      "kind": "StringLiteral",
+      "offset": 2040,
+      "length": 26,
+      "value": "\"RiveRuntime.RiveFallbackFontDescriptor\""
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 548,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 553,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 672,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 677,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 774,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 779,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 885,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 890,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 1011,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 1016,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger.swift",
       "kind": "Array",
       "offset": 1117,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 285,
+      "length": 12,
+      "value": "\"RiveRuntime.RiveLogLevel\""
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 1851,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 1856,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 1985,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 1990,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 2122,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 2127,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 2250,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 2255,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 2376,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 2381,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 2502,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 2507,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 2631,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 2636,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger.swift",
       "kind": "Array",
       "offset": 2732,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1561,
+      "length": 15,
+      "value": "\"RiveRuntime.RiveLogCategory\""
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger.swift",
       "kind": "BooleanLiteral",
       "offset": 3422,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger.swift",
       "kind": "BooleanLiteral",
       "offset": 3657,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger+File.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger+File.swift",
       "kind": "StringLiteral",
       "offset": 718,
       "length": 11,
       "value": "\"rive-file\""
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger+View.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger+View.swift",
       "kind": "StringLiteral",
       "offset": 576,
       "length": 11,
       "value": "\"rive-view\""
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Utils\/RiveStateMachineInstance+Extensions.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Utils\/RiveStateMachineInstance+Extensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 850,
+      "offset": 856,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Utils\/RiveStateMachineInstance+Extensions.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Utils\/RiveStateMachineInstance+Extensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 858,
+      "offset": 864,
       "length": 7,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveViewModel.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Utils\/RiveStateMachineInstance+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 856,
+      "length": 6,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Utils\/RiveStateMachineInstance+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 864,
+      "length": 7,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Utils\/RiveStateMachineInstance+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 971,
+      "length": 17,
+      "value": "\"RiveRuntime.StateMachineInput\""
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 1793,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveViewModel.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 2286,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveViewModel.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveViewModel.swift",
       "kind": "StringLiteral",
       "offset": 2662,
       "length": 6,
       "value": "\".riv\""
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveViewModel.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 2842,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveViewModel.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 2909,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveViewModel.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveViewModel.swift",
       "kind": "StringLiteral",
       "offset": 3395,
       "length": 6,
       "value": "\".riv\""
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveViewModel.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 3578,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveViewModel.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 3691,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveViewModel.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 4287,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveViewModel.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 4317,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveViewModel.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 4880,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveViewModel.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 4910,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveViewModel.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 7298,
+      "offset": 7332,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Utils\/FPSCounterView.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1122,
+      "length": 13,
+      "value": "\"RiveRuntime.RiveViewModel\""
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 27736,
+      "length": 11,
+      "value": "\"RiveRuntime.Coordinator\""
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Utils\/FPSCounterView.swift",
       "kind": "FloatLiteral",
       "offset": 299,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Utils\/FPSCounterView.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Utils\/FPSCounterView.swift",
       "kind": "IntegerLiteral",
       "offset": 359,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Utils\/FPSCounterView.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Utils\/FPSCounterView.swift",
       "kind": "IntegerLiteral",
       "offset": 411,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
       "kind": "IntegerLiteral",
       "offset": 3572,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 6658,
       "length": 23,
       "value": "\"CTFontUltraLightUsage\""
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 6698,
       "length": 17,
       "value": "\"CTFontThinUsage\""
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 6733,
       "length": 18,
       "value": "\"CTFontLightUsage\""
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 6771,
       "length": 20,
       "value": "\"CTFontRegularUsage\""
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 6810,
       "length": 19,
       "value": "\"CTFontMediumUsage\""
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 6850,
       "length": 17,
       "value": "\"CTFontDemiUsage\""
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 6884,
       "length": 17,
       "value": "\"CTFontBoldUsage\""
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 6919,
       "length": 18,
       "value": "\"CTFontHeavyUsage\""
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 6955,
       "length": 18,
       "value": "\"CTFontBlackUsage\""
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
       "kind": "StringLiteral",
-      "offset": 7895,
-      "length": 26,
-      "value": "\"NSCTFontUIUsageAttribute\""
+      "offset": 6658,
+      "length": 23,
+      "value": "\"CTFontUltraLightUsage\""
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8629,
-      "length": 3,
-      "value": "100"
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6698,
+      "length": 17,
+      "value": "\"CTFontThinUsage\""
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8686,
-      "length": 3,
-      "value": "200"
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6733,
+      "length": 18,
+      "value": "\"CTFontLightUsage\""
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8738,
-      "length": 3,
-      "value": "300"
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6771,
+      "length": 20,
+      "value": "\"CTFontRegularUsage\""
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8792,
-      "length": 3,
-      "value": "400"
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6810,
+      "length": 19,
+      "value": "\"CTFontMediumUsage\""
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8845,
-      "length": 3,
-      "value": "500"
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6850,
+      "length": 17,
+      "value": "\"CTFontDemiUsage\""
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8900,
-      "length": 3,
-      "value": "600"
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6884,
+      "length": 17,
+      "value": "\"CTFontBoldUsage\""
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8951,
-      "length": 3,
-      "value": "700"
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6919,
+      "length": 18,
+      "value": "\"CTFontHeavyUsage\""
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9003,
-      "length": 3,
-      "value": "800"
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 6955,
+      "length": 18,
+      "value": "\"CTFontBlackUsage\""
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9055,
-      "length": 3,
-      "value": "900"
-    },
-    {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9083,
-      "length": 3,
-      "value": "400"
-    },
-    {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Fonts\/RiveFallbackFontDescriptor+Extensions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9712,
-      "length": 3,
-      "value": "100"
-    },
-    {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger+Artboard.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger+Artboard.swift",
       "kind": "StringLiteral",
       "offset": 385,
       "length": 15,
       "value": "\"rive-artboard\""
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveModel.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 676,
+      "offset": 670,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveModel.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveModel.swift",
       "kind": "StringLiteral",
-      "offset": 883,
+      "offset": 877,
       "length": 6,
       "value": "\".riv\""
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveModel.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 934,
+      "offset": 928,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveModel.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1511,
+      "offset": 1505,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveModel.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/RiveModel.swift",
       "kind": "StringLiteral",
-      "offset": 7956,
-      "length": 25,
-      "value": "\"RiveModel - [Artboard: \""
+      "offset": 188,
+      "length": 9,
+      "value": "\"RiveRuntime.RiveModel\""
     },
     {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveModel.swift",
-      "kind": "StringLiteral",
-      "offset": 8079,
-      "length": 16,
-      "value": "\"StateMachine: \""
-    },
-    {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveModel.swift",
-      "kind": "StringLiteral",
-      "offset": 8120,
-      "length": 3,
-      "value": "\"]\""
-    },
-    {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveModel.swift",
-      "kind": "StringLiteral",
-      "offset": 8203,
-      "length": 13,
-      "value": "\"Animation: \""
-    },
-    {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveModel.swift",
-      "kind": "StringLiteral",
-      "offset": 8238,
-      "length": 3,
-      "value": "\"]\""
-    },
-    {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/RiveModel.swift",
-      "kind": "StringLiteral",
-      "offset": 8292,
-      "length": 3,
-      "value": "\"]\""
-    },
-    {
-      "filePath": "\/Users\/farmanullah\/Documents\/Ios-Projects\/rive-ios\/Source\/Logging\/RiveLogger+StateMachine.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/rive-ios\/rive-ios\/Source\/Logging\/RiveLogger+StateMachine.swift",
       "kind": "StringLiteral",
       "offset": 430,
       "length": 20,
