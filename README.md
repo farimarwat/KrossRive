@@ -6,7 +6,7 @@ KrossRive is a **Kotlin Multiplatform library** that makes it easy to use [Rive]
 
 ## 📦 Installation
 
-### Android (Gradle)
+### CommonMain (Gradle)
 Add the dependency in your `build.gradle.kts`:
 
 ```
@@ -19,6 +19,7 @@ dependencies {
 Add the official **Rive iOS SDK** in your Xcode project:
 
 ```
+//pull the latest version
 https://github.com/rive-app/rive-ios.git
 ```
 
@@ -33,14 +34,17 @@ You can load it either from **local resources (bytes)** or from a **URL**.
 Suppose you have a `.riv` file in your resources:
 
 ```
-val riveBytes = Res.readBytes("files/login.riv")
+ val riveBytes by produceState<ByteArray?>(initialValue = null) {
+    value = Res.readBytes("files/login.riv")
+}
 
-val animationState = rememberKrossRiveAnimationState(
-    config = KrossRiveConfig(
-        resource = KrossRiveResource.Bytes(riveBytes),
-        stateMachine = "Login Machine"
+val animationState = riveBytes?.let {
+    rememberKrossRiveAnimationState(
+        config = KrossRiveConfig(
+            resource = KrossRiveResource.Url("https://cdn.rive.app/animations/juice_v7.riv"),
+        )
     )
-)
+}
 ```
 
 ### 2. From URL
@@ -50,7 +54,6 @@ You can also load directly from the web:
 val animationState = rememberKrossRiveAnimationState(
     config = KrossRiveConfig(
         resource = KrossRiveResource.Url("https://cdn.rive.app/animations/off_road_car_v7.riv"),
-        stateMachine = "Login Machine"
     )
 )
 ```
