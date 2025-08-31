@@ -17,6 +17,7 @@ dependencies {
 
 ### iOS (Swift Package Manager)
 Add the official **Rive iOS SDK** in your Xcode project:
+File>Add Package Dependencies
 
 ```
 //pull the latest version
