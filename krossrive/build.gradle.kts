@@ -142,7 +142,7 @@ kotlin {
             }
         }
 
-        //publishToMavenCentral()
+        publishToMavenCentral()
 
         // Enable GPG signing for all publications
         signAllPublications()

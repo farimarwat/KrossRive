@@ -72,11 +72,30 @@ KrossRiveAnimation(
 )
 ```
 
+## 🎮 Using the AnimationState
+
+You can control your animation via the `KrossRiveAnimationState` functions:
+
+```kotlin
+// playback controls
+animationState.play()
+animationState.pause()
+animationState.stop()
+animationState.reset()
+
+// state machine inputs
+animationState.setBoolean("Login Machine", "isHandsUp", true)
+animationState.setNumber("Login Machine", "numLook", 5f)
+animationState.fire("Login Machine", "trigSuccess")
+
+// reload with a new resource (bytes or url)
+animationState.load(url = "https://cdn.rive.app/animations/new_animation.riv")
+```
 ---
 
 ## 🎯 Summary
 
-- Add dependency (`krossrive` for Android, Rive SDK for iOS).  
-- Create an animation state from **file bytes** or **URL**.  
-- Render with `KrossRiveAnimation`.  
+- Add dependency (`krossrive` for Android, Rive SDK for iOS).
+- Create an animation state from **file bytes** or **URL**.
+- Render with `KrossRiveAnimation`.
 - Control the state machine using `setNumber`, `setBoolean`, and `fire`.  
