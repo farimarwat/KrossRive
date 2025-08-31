@@ -47,9 +47,9 @@ fun App() {
         val animationState = riveBytes?.let {
             rememberKrossRiveAnimationState(
                 config = KrossRiveConfig(
-                    //resource = KrossRiveResource.Url("https://cdn.rive.app/animations/off_road_car_v7.riv")
-                    resource = KrossRiveResource.Bytes(it),
-                    stateMachine = "Login Machine"
+                    resource = KrossRiveResource.Url("https://cdn.rive.app/animations/juice_v7.riv"),
+                    //resource = KrossRiveResource.Bytes(it),
+                    stateMachine = null
                 )
             )
         }

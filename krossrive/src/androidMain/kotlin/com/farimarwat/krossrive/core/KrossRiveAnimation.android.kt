@@ -12,10 +12,13 @@ actual fun KrossRiveAnimation(
     state: KrossRiveAnimationState,
     modifier: Modifier
 ) {
-    AndroidView(
-        factory = { context ->
-            (state as AndroidKrossRiveAnimationState).view
-        },
-        modifier = modifier
-    )
+    (state as AndroidKrossRiveAnimationState).view?.let{
+        AndroidView(
+            factory = { context ->
+                it
+            },
+            modifier = modifier
+        )
+    }
+
 }

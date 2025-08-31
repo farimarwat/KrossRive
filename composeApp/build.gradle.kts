@@ -43,6 +43,7 @@ kotlin {
             implementation(libs.androidx.lifecycle.viewmodelCompose)
             implementation(libs.androidx.lifecycle.runtimeCompose)
             implementation(project(":krossrive"))
+            //implementation("io.github.farimarwat:krossrive:1.0")
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)

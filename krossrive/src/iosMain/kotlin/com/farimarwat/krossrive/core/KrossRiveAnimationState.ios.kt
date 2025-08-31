@@ -100,13 +100,11 @@ actual fun rememberKrossRiveAnimationState(config: KrossRiveConfig): KrossRiveAn
     return remember(config) {
         when(val resource = config.resource){
             is KrossRiveResource.Bytes -> {
-
                 IosKrossRiveAnimationState(config).apply {
                     load(resource.data)
                 }
             }
             is KrossRiveResource.Url -> {
-
                 IosKrossRiveAnimationState(config).apply {
                     load(resource.url)
                 }
