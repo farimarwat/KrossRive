@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.androidKotlinMultiplatformLibrary)
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
+    id("com.vanniktech.maven.publish") version "0.34.0"
 }
 
 kotlin {
@@ -107,5 +108,43 @@ kotlin {
             }
         }
     }
+    mavenPublishing{
+        coordinates(
+            groupId = "io.github.farimarwat",
+            artifactId = "krossrive",
+            version = "1.0"
+        )
+        pom {
+            name.set("KrossMap")
+            description.set("KrossRive for KMP is a Kotlin Multiplatform library that brings the power of Rive animations to your apps with a simple, unified API. It lets you seamlessly integrate and control Rive files across Android, iOS, and beyond — all from a single Kotlin codebase.")
+            inceptionYear.set("2025")
+            url.set("https://github.com/farimarwat/KrossRive")
 
+            licenses {
+                license {
+                    name.set("MIT")
+                    url.set("https://opensource.org/licenses/MIT")
+                }
+            }
+
+            // Specify developers information
+            developers {
+                developer {
+                    id.set("farimarwat")
+                    name.set("Farman Ullah Khan Marwat")
+                    email.set("farimarwat@gmail.com")
+                }
+            }
+
+            // Specify SCM information
+            scm {
+                url.set("https://github.com/farimarwat/KrossRive")
+            }
+        }
+
+        //publishToMavenCentral()
+
+        // Enable GPG signing for all publications
+        signAllPublications()
+    }
 }
